@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <Your Name> - Curriculum Vitae
+title: Jeffrey Wang - CV
 permalink: /cv/
 ---
 ## Curriculum Vitae

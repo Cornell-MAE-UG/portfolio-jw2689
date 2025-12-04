@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Radio CAD Rendering
+title: Torque Wrench Analysis
 description: Advanced CAD Project
 technologies: [Autodesk Fusion]
 image: /assets/images/radio-machine-cad.jpg
