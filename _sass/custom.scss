@@ -49,7 +49,7 @@ header {
 
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 200px;
   font-size: 0.9em;
 }
 
@@ -96,14 +96,15 @@ footer {
 
 .profile-image {
   float: left;
-  margin: 20px 25px 25px 0;
-  width: 150px;
+  margin: 20px 25px 0px 0px;
+  width: 50%;
+  height: 50%;
   vertical-align: top;
 }
 
 .project-image {
   float: left;
-  margin: 20px 25px 25px 0;
+  margin: 20px 150px 25px 0;
   max-width: 200px;
   vertical-align: top;
 }
