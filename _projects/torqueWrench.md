@@ -69,6 +69,6 @@ The increased deflection also should increase the measured strain at the strain 
 <br>
 ![Photo of probes]({{ "/assets/images/probes.png" | relative_url }}){: .inline-image-l}
 <br><br>
-We chose a strain gauge with a slightly larger gauge factor (~2) than the baseline gauge. To get this, we chose the Omega SGD-3/350-LY11. It is a linear strain gauge with 3mm grids, and 350ohms. It is a general use foil strain gauge, which is reported to have the gauge factor ~2. Having 3mm grids, it is able to be attached easily onto either side of our cylindrial cross section on the outside. 
+We chose a strain gauge with a slightly larger gauge factor (~2) than the baseline gauge. To get this, we chose the Omega SGD-3/350-LY43. It is a linear strain gauge with that is 7mm long and around 3mm in width, with 350ohms resistance. It has a max V* of 13Vrms, and is a general use aluminum foil strain gauge, which is reported to have the gauge factor ~2. Being 7mm long, it is able to be attached easily onto either side of our cylindrial cross section on the outside. 
 <br>
 ![gauge]({{ "/assets/images/gauge.png" | relative_url }}){: .inline-image-r style="width: 100px"}
