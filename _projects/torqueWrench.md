@@ -1,8 +1,8 @@
 ---
 layout: project
 title: Torque Wrench Analysis
-description: Advanced CAD Project
-technologies: [Autodesk Fusion]
+description: Advanced Materials Analysis Project
+technologies: [Autodesk Fusion, MATLAB, Ansys]
 image: /assets/images/torquewrench.png
 ---
 
