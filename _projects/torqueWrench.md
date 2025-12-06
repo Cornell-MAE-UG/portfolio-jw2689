@@ -47,7 +47,7 @@ Once we had the design, we were able to export it into ANSYS and perform a stati
 <br>
 For the boundary conditions, we assumed a clamped fixed boundary at the socket, and applied a load at the end of the torque wrench, F=37.5lb, corresponding to the moment of 600inlb required. 
 <br>
-![Photo of ANSYS setup]({{ "/assets/images/boundary.jpg" | relative_url }}){: .inline-image-l}
+![Photo of ANSYS setup]({{ "/assets/images/boundary.png" | relative_url }}){: .inline-image-l}
 <br>
 Diagram of the normal strain contours: <br>
 ![Photo of normal strain contours]({{ "/assets/images/strains.png" | relative_url }}){: .inline-image-l}
@@ -55,10 +55,11 @@ Diagram of the normal strain contours: <br>
 
 Contour Plot of the maximum principal stresses: <br>
 ![Photo of principle stresses]({{ "/assets/images/principle.png" | relative_url }}){: .inline-image-l}
+![Photo of maxnormal]({{ "/assets/images/maxnormal.png" | relative_url }}){: .inline-image-l}
 <br>
 
 <br>
-Our maximum normal stress was ___, which is much higher than the predicted stress from the hand calcs. This is likely due to a large stress concentration forming at the end of the clamped boundary condition. This creates the perhaps unrealistic load in ANSYS. Adding in a probe in the area around the linear concentration, even still where the concentration should be, shows a more expected normal stress of 20,010psi. This creates a factor of safety in the normal stress of 6.89, which is above our design constraint of 4. 
+Our maximum normal stress was 68952, which is much higher than the predicted stress from the hand calcs. This is likely due to a large stress concentration forming at the end of the clamped boundary condition. This creates the perhaps unrealistic load in ANSYS. Adding in a probe in the area around the linear concentration, even still where the concentration should be, shows a more expected normal stress of 21,335psi. This creates a factor of safety in the normal stress of 6.47, which is still above our design constraint of 4. 
 <br>
 The maximum deflection of the torque wrench was .27366in, which is slightly larger than our predicted deflection of .22577in. However, this is still quite close to what was expected from a simple cantilever beam calculation. 
 <br>
