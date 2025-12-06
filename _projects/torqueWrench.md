@@ -47,27 +47,27 @@ Once we had the design, we were able to export it into ANSYS and perform a stati
 <br>
 For the boundary conditions, we assumed a clamped fixed boundary at the socket, and applied a load at the end of the torque wrench, F=37.5lb, corresponding to the moment of 600inlb required. 
 <br>
-![Photo of ANSYS setup]({{ "/assets/images/old-radio.jpg" | relative_url }}){: .inline-image-l}
+![Photo of ANSYS setup]({{ "/assets/images/boundary.jpg" | relative_url }}){: .inline-image-l}
 <br>
 Diagram of the normal strain contours: <br>
-![Photo of normal strain contours]({{ "/assets/images/normalStrain.png" | relative_url }}){: .inline-image-l}
+![Photo of normal strain contours]({{ "/assets/images/strains.png" | relative_url }}){: .inline-image-l}
 <br>
 
 Contour Plot of the maximum principal stresses: <br>
-![Photo of normal strain contours]({{ "/assets/images/principleStress.png" | relative_url }}){: .inline-image-l}
+![Photo of principle stresses]({{ "/assets/images/principle.png" | relative_url }}){: .inline-image-l}
 <br>
 
 <br>
-Our maximum normal stress was ___, which is much higher than the predicted stress from the hand calcs. This is likely due to a large stress concentration forming at the end of the clamped boundary condition. This creates the perhaps unrealistic load in ANSYS. Adding in a probe in the area around the linear concentration, even still where the concentration should be, shows a more expected normal stress of __. This creates a factor of safety in the normal stress of ___, which is below our design constraint of 4. 
+Our maximum normal stress was ___, which is much higher than the predicted stress from the hand calcs. This is likely due to a large stress concentration forming at the end of the clamped boundary condition. This creates the perhaps unrealistic load in ANSYS. Adding in a probe in the area around the linear concentration, even still where the concentration should be, shows a more expected normal stress of 20,010psi. This creates a factor of safety in the normal stress of 6.89, which is above our design constraint of 4. 
 <br>
 The maximum deflection of the torque wrench was .27366in, which is slightly larger than our predicted deflection of .22577in. However, this is still quite close to what was expected from a simple cantilever beam calculation. 
 <br>
 ![Photo of max deflection]({{ "/assets/images/maxdeflection.png" | relative_url }}){: .inline-image-l}
 <br>
-The increased deflection also should increase the measured strain at the strain probes. From a half bridge probe design on either side of the wrench head, it shows that the strain is about ___, which leads to a torque wrench sensitivity of ___mV/V. This is within the allowable range. 
+The increased deflection also should increase the measured strain at the strain probes. From a half bridge probe design on either side of the wrench head, it shows strains that read 3.9399e-004 and -3.9402e-004, which leads to a torque wrench sensitivity of .794mV/V. This is less than the allowable range, and is likely due to the increased material that we added towards the socket, leading to a lower strain in the area. 
 <br>
 ![Photo of probes]({{ "/assets/images/probes.png" | relative_url }}){: .inline-image-l}
 <br><br>
 We chose a strain gauge with a slightly larger gauge factor (~2) than the baseline gauge. To get this, we chose the Omega SGD-3/350-LY11. It is a linear strain gauge with 3mm grids, and 350ohms. It is a general use foil strain gauge, which is reported to have the gauge factor ~2. Having 3mm grids, it is able to be attached easily onto either side of our cylindrial cross section on the outside. 
 <br>
-![gauge]({{ "/assets/images/gauge.png" | relative_url }}){: .inline-image-r style="width: 200px"}
+![gauge]({{ "/assets/images/gauge.png" | relative_url }}){: .inline-image-r style="width: 100px"}
