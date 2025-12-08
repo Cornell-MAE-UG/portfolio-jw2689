@@ -65,10 +65,10 @@ The maximum deflection of the torque wrench was .27366in, which is slightly larg
 <br>
 ![Photo of max deflection]({{ "/assets/images/maxdeflection.png" | relative_url }}){: .inline-image-l}
 <br>
-The increased deflection also should increase the measured strain at the strain probes. From a half bridge probe design on either side of the wrench head, it shows strains that read 3.9399e-004 and -3.9402e-004, which leads to a torque wrench sensitivity of .794mV/V. This is less than the allowable range, and is likely due to the increased material that we added towards the socket, leading to a lower strain in the area. 
+The increased deflection also should increase the measured strain at the strain probes. From a full bridge probe design on both sides and top and bottom of the wrench head, it shows strains that read 3.9399e-004, -3.9402e-004, 3.9553e-004, and -3.9467e-004, which leads to a torque wrench sensitivity of .794mV/V. This is less than the allowable range, and is likely due to the increased material that we added towards the socket, leading to a lower strain in the area. 
 <br>
 ![Photo of probes]({{ "/assets/images/probes.png" | relative_url }}){: .inline-image-l}
 <br><br>
-We chose a strain gauge with a slightly larger gauge factor (~2) than the baseline gauge. To get this, we chose the Omega SGD-3/350-LY43. It is a linear strain gauge with that is 7mm long and around 3mm in width, with 350ohms resistance. It has a max V* of 13Vrms, and is a general use aluminum foil strain gauge, which is reported to have the gauge factor ~2. Being 7mm long, it is able to be attached easily onto either side of our cylindrial cross section on the outside. 
+We chose a strain gauge with a slightly larger gauge factor (~2) than the baseline gauge. To get this, we chose the Omega SGD-3/350-LY43. It is a linear strain gauge with that is 7mm long and around 3mm in width, with 350ohms resistance. It has a max V* of 13Vrms, and is a general use aluminum foil strain gauge, which is reported to have the gauge factor ~2. Being 7mm long, it is able to be attached easily onto all 4 sides of our cylindrial cross section on the outside. 
 <br>
 ![gauge]({{ "/assets/images/gauge.png" | relative_url }}){: .inline-image-r style="width: 100px"}
