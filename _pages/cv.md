@@ -8,23 +8,23 @@ permalink: /cv/
 [Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
 
 
-**Email:** [netID@cornell.edu](mailto:netID@cornell.edu) | | | **Phone:** +123 456 7890
+**Email:** [jw2689@cornell.edu](mailto:jw2689@cornell.edu) | | | **Phone:** +9142086605
 
 ---
 
 #### Objective
-Aspiring engineering student with a strong foundation in.... Passionate about ... and eager to apply my knowledge in real-world applications.
+Hi! My name is Jeffrey Wang, and I am a Cornell University undergraduate student majoring in Mechanical Engineering. I am particularly interested in the aerospace sector, and I love to tinker with anything and everything! Please feel free to take a look at some of the projects I've worked on.
 
 ---
 
 #### Education
 - **Cornell University**  
   *Bachelor of Science in Mechanical and Aerospace Engineering*  
-  GPA: 3.8/4.0 | Graduation: Month, Year
+  GPA: 3.91/4.0 | Graduation: Dec 2026
 
 - **[High School Name]**  
-  *High School Diploma*  
-  Graduation: [Month, Year]
+  Rye Country Day School
+  Graduation: May 2023
 
 ---
 
@@ -36,35 +36,20 @@ Aspiring engineering student with a strong foundation in.... Passionate about ..
 ---
 
 #### Projects
-- **[Project Title]**:  
-  *[Short Description]*  
-  - Key Achievement 1  
-  - Key Achievement 2  
+- **Torque Wrench Analysis**:  
 
-- **[Project Title]**:  
-  *[Short Description]*  
-  - Key Achievement 1  
-  - Key Achievement 2  
+- **Fluids Mechanical Dissection**;
 
 ---
 
 #### Work Experience
-- **[Company Name] - Intern**  
-  [Month, Year] - [Month, Year]  
-  - Responsibility 1  
-  - Responsibility 2  
-
----
-
-#### Achievements & Certifications
-- [Certification Name], [Issuing Organization], [Year]  
-- [Achievement Name], [Competition/Event], [Year]  
+- **General Dynamics Mission Systems - Intern**  
+  May 2025 - August 2025  
 
 ---
 
 #### Extracurricular Activities
-- Member of [Club/Organization Name]  
-- Volunteer for [Event/Organization Name]  
+- Airframe Lead of Cornell University Unmanned Air Systems
 
 ---
 
