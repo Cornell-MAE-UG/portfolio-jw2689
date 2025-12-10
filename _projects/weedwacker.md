@@ -1,13 +1,13 @@
 ---
 layout: project
 title: Fluids Weedwacker Mechanical Dissection
-description: Just a spaceship that I designed
-technologies: [SolidWorks, Machining]
-image: /assets/images/spaceship-design.jpg
+description: A dissection of a weedwacker and the engine
+image: /assets/images/weedwacker.jpg
 ---
 
 
-In 2021, NASA asked me to design a spaceship...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec accumsan leo. Pellentesque ornare orci enim, vitae vestibulum nibh rutrum in. Donec pharetra risus nec ipsum fringilla, et mattis tortor auctor. Duis tortor ante, posuere ut odio a, scelerisque interdum purus. Aenean faucibus luctus est, sed bibendum tellus. Nulla et magna urna. Morbi a ipsum sollicitudin, rhoncus risus volutpat, ultricies nunc. Quisque mollis finibus ante id imperdiet. Quisque vehicula elit sit amet felis facilisis fermentum.
+[Weedwacker Dissection Video](https://www.youtube.com/watch?v=heM3BsLl4ek)
 
-Aenean tincidunt aliquam arcu, in euismod dui dapibus eu. In placerat, mi et ultrices consequat, quam ligula cursus mauris, in semper neque nibh at est. Maecenas hendrerit dignissim porta. Phasellus nec fringilla dolor. Etiam efficitur nisi sit amet velit pharetra feugiat. Etiam ultrices turpis at leo semper, eleifend scelerisque neque malesuada. Aliquam molestie congue rhoncus. Donec blandit neque dolor, nec tristique mi pretium ac. Mauris tincidunt ullamcorper magna, nec pellentesque mi sagittis quis.
+<br>
 
+I worked on much of the inital dissection with the group. Once we had all the different parts taken apart  , I got measurements from the carburetor and applied bernoulli to try and compare the flowrate to the cc of the engine spec. This was decently successful, but I had to make some bold assumptions and comparisons in order to simplify the equations enough to work. I then helped with the editing and uploading of the video. The weed wacker was super interesting, and there were a lot of aspects of it that we didn't have enough time to cover in the video such as the magnets to induce voltage for the spark timing, and the mechanical control over throttle. 

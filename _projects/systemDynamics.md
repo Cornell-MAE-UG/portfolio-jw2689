@@ -1,25 +1,14 @@
 ---
 layout: project
 title: Quadcopter System Dynamics Analysis
-description: Class project with Graphs
-technologies: [MATLAB, python]
-image: /assets/images/function-graph.png
+description: Class project Dissection
+technologies: [MATLAB, Oscilloscope]
+image: /assets/images/quadcopter.png
 ---
 
-
-As part of a class project...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec accumsan leo. Pellentesque ornare orci enim, vitae vestibulum nibh rutrum in. Donec pharetra risus nec ipsum fringilla, et mattis tortor auctor. Duis tortor ante, posuere ut odio a, scelerisque interdum purus. Pellentesque ornare orci enim, vitae vestibulum nibh rutrum in. Donec pharetra risus nec ipsum fringilla, et mattis tortor auctor. Duis tortor ante, posuere ut odio a, scelerisque interdum purus. Aenean faucibus luctus est, sed bibendum tellus. Nulla et magna urna. Morbi a ipsum sollicitudin, rhoncus risus volutpat, ultricies nunc. Quisque mollis finibus ante id imperdiet. Quisque vehicula elit sit amet felis facilisis fermentum.
-
-
-Aenean faucibus luctus est, sed bibendum tellus. Nulla et magna urna. Morbi a ipsum sollicitudin, rhoncus risus volutpat, ultricies nunc. Quisque mollis finibus ante id imperdiet. Quisque vehicula elit sit amet felis facilisis fermentum.
-
-
-This is how I solved the problem:
-
-```python
-    some code = 10;
-    plot();
-```
-
-Aenean tincidunt aliquam arcu, in euismod dui dapibus eu. In placerat, mi et ultrices consequat, quam ligula cursus mauris, in semper neque nibh at est. Maecenas hendrerit dignissim porta. Phasellus nec fringilla dolor. Etiam efficitur nisi sit amet velit pharetra feugiat. Etiam ultrices turpis at leo semper, eleifend scelerisque neque malesuada. Aliquam molestie congue rhoncus. Donec blandit neque dolor, nec tristique mi pretium ac. Mauris tincidunt ullamcorper magna, nec pellentesque mi sagittis quis.
-
-
+Our group disassembled a quadrotor with the intent to analyze how it controls the individual DC motors. We found that there is a flight controller and likely an ESC that controls the voltage going into each of the motors. We were able to measure the ramp up voltage of the motor by partially stripping away the two wires leading into the small DC motor from the flight controller. The voltage we found was extremely interesting, and did not show a clear voltage ramp up line, instead appearing as concentrations of voltage within a wide range of voltages. However, we were able to pick out what appeared to be a voltage curve that resembled a first order open loop system that we developed for Lab 1. This makes sense physically when compared to the closed loop system, as typical ESCs do not back measure the rpm of the rotor, and in turn cannot create a closed loop with just the motor. The closed loop response of the quadcopter comes from the flight controller gyro rather than the motor and ESC.  Measuring the values relevant to this curve, we found a y0 of -10mV and a ∆y=1.98V. For the steady state value,                                                                           we measured the middle average of the darker shaded curve. From this, we calculated a time constant τ of 116ms for the response. 
+Our τ is largely defined by the moment of inertia I of the propeller and gears that it is driving. We can use this to find a 10-90% rise time of about 0.255s, which is much higher than the 29ms response found from the high speed camera. This value is far too high to be plausible for a quadcopter as the feedback loop would be far too slow to control flight requirements. A change in the measured line could probably bring τ down by 20-30% to .179-0.2s, but this would still be far from the expected value. There is a gear ratio of 2:1 between the motor and prop, but this would only affect the steady state values, not the speed of response. There was likely something inconsistent between the two tests to cause this, as the flight controller is responsible for the power each motor gets to stabilize, and the tilting of the drone and intended response of the drone was likely different in either test.
+We can compare the response to the open loop differential equation found in lab: τẏ + y = Ku. To find the gain K, we can compare the ∆y/∆u, 1.98V/.96V (found from the duty cycle), and find K=2.0625. From the transfer function G(s) = Y(s)/U(s)=K/τs+1, we can create a governing transfer function of G(s) =2.0625/.116s+1.
+We determined that the initially noisy signal was due to a pulse width modulation (PWM) signal that the flight controller sends to the motor to control the rotation speed. The PWM signal rapidly turns on and off the signal to vary the duty cycle. The average of the voltage is what is seen by the DC motor, and is the solid line that we tracked earlier to measure voltage changes. It likely oscillates between 0V and 2V, which are the bounds of that signal that we were seeing in the oscilloscope when zoomed out. However, we zoomed into the signal to see the individual duty cycles. Before the ramp up, we measured a duty cycle of 0%. Halfway through the ramp up, the duty cycle measured 38%, and 96% at the steady state voltage. 
+<br>![Oscilloscope]({{ "/assets/images/Oscilloscope.png" | relative_url }}){: .inline-image-r style="width: 400px"}<br>
+![Duty Cycle]({{ "/assets/images/DutyCycle.png" | relative_url }}){: .inline-image-r style="width: 400px"}
