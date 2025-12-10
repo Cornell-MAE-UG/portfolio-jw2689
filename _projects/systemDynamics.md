@@ -3,7 +3,7 @@ layout: project
 title: Quadcopter System Dynamics Analysis
 description: Class project Dissection
 technologies: [MATLAB, Oscilloscope]
-image: /assets/images/quadcopter.png
+image: /assets/images/quadcopter.JPG
 ---
 
 Our group disassembled a quadrotor with the intent to analyze how it controls the individual DC motors. We found that there is a flight controller and likely an ESC that controls the voltage going into each of the motors. We were able to measure the ramp up voltage of the motor by partially stripping away the two wires leading into the small DC motor from the flight controller. The voltage we found was extremely interesting, and did not show a clear voltage ramp up line, instead appearing as concentrations of voltage within a wide range of voltages. However, we were able to pick out what appeared to be a voltage curve that resembled a first order open loop system that we developed for Lab 1. This makes sense physically when compared to the closed loop system, as typical ESCs do not back measure the rpm of the rotor, and in turn cannot create a closed loop with just the motor. The closed loop response of the quadcopter comes from the flight controller gyro rather than the motor and ESC.  Measuring the values relevant to this curve, we found a y0 of -10mV and a ∆y=1.98V. For the steady state value,                                                                           we measured the middle average of the darker shaded curve. From this, we calculated a time constant τ of 116ms for the response. 

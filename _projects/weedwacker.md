@@ -2,7 +2,7 @@
 layout: project
 title: Fluids Weedwacker Mechanical Dissection
 description: A dissection of a weedwacker and the engine
-image: /assets/images/weedwacker.jpg
+image: /assets/images/weedwacker.png
 ---
 
 
