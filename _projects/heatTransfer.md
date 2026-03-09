@@ -5,7 +5,14 @@ description: An analysis of a heat transfer problem
 image: /assets/images/heat-transfer-methods.webp
 ---
 
-![gauge]({{ "/assets/HTHW.pdf" | relative_url }}){: .inline-image-r style="width: 150px"}
+<div class="pdf-container" style="margin: 20px 0;">
+    <iframe 
+        src="{{ '/assets/HTHW.pdf' | relative_url }}" 
+        width="100%" 
+        height="600px" 
+        style="border: none;">
+    </iframe>
+</div>
 
 <br>
 
